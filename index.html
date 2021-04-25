@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>ReadyPlayerOne -- Question 4 & 5</title>
+<link rel="stylesheet" type="text/css" href="./inspector.css">
+<body>
+
+    
+<script type="module">
+
+import define from "./index.js";
+import {Runtime, Library, Inspector} from "./runtime.js";
+
+const runtime = new Runtime();
+const main = runtime.module(define, Inspector.into(document.body));
+
+</script>
+
+<script type="text/javascript">(function(){
+    function ac_add_to_head(el){
+    var head = document.getElementsByTagName('head')[0];
+    head.insertBefore(el,head.firstChild);
+    }
+    function ac_add_style(css){
+    var ac_style = document.createElement('style');
+    if (ac_style.styleSheet) ac_style.styleSheet.cssText = css;
+    else ac_style.appendChild(document.createTextNode(css));
+    ac_add_to_head(ac_style);
+    }
+    ac_add_style(".anychart-embed-lugALX51{width:600px;height:450px;}");
+    })();
+</script>
